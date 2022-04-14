@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoImg {
+    height: 50px;
+    width: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nombrePag {
+    display: inline-block;
+    color: rgb(10, 76, 163);
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.barraNavLista__anchor a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+}
+
+.barraNavLista {
+    display: none;
+    position: absolute; 
+    background-color:#f1f1f1;
+}
+
+.barraNavLista li {
+    list-style: none;
+    padding: 10px;
+}
+
+.menu:hover .barraNavLista {
+    display: block;
+}
+
+.menu {
+    position: relative;
+}
+
+.intro {
+    background-image: url(./imagenes/fondo-ladrillo.webp);
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+    padding-top: 100px;
+    padding-bottom: 110px;
+}
+
+.intro h1 {
+    color: rgb(10, 76, 163);
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 40px;
+    text-align: center;
+}
+
+.categories {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.categories h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.categories ul {
+    list-style: none;
+}
+
+.categoriesList {
+    display: grid;  
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 10px;
+    justify-items: center;
+}
+
+.categories p {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.categoriesImg {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.pasos {
+    list-style: none;
+    display: grid;  
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    grid-row-gap: 20px;
+    align-items: center;
+    /* 
+    justify-items: center;
+
+    aplicando esto no se centra
+    */
+}
+
+.pasos li {
+    width: 100%; 
+}
+
+.pasosImg {
+    width: 170px;
+    height: 170px;
+    /* 
+    margin-left: auto;
+    margin-right: auto;
+
+    aplicando esto no se centra
+    */
+}
+
+.pasosH {
+    font-size: 35px;
+    font-family: 'Indie Flower', cursive;
+    padding-top: 15px;
+    /* tengo que centrar por etiqueta */
+   text-align: center;
+}
+
+.pasosP {
+    font-size: 25px;
+    /* tengo que centrar por etiqueta */
+    text-align: center;
+}
+
+.rating {
+    background-image: url(./imagenes/servicios.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /*     
+    display: grid;
+    grid-template-columns: repeat (1fr, 1fr, 1fr);
+    grid-template-rows: 1fr; 
+    */
+
+
+}
+
+.ratingUl {
+    margin: 50px;
+    list-style: none;
+}
+
+.ratingUl li {
+    padding: 20px;
+    background-color:rgba(255,255,255,0.5);
+    border: 2px solid black;
+    border-radius: 50px 20px;
+    margin: 50px;
+
+}
+
+/* ajustar en columnas con grid */
+.ratingImg {
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    opacity: inherit;
+}
+
+/* ajustar en columnas con grid */
+.ratingName {
+    color: rgb(10, 76, 163);
+    font-size: 35px;
+    display: inline-block;
+}   
+
+/* ajustar en columnas con grid */
+.ratingStars {
+    font-size: 25px;
+    color: rgb(231, 24, 24);
+}
+
+/* ajustar en columnas con grid */
+.ratingDesc {
+    font-size: 25px;
+    color:rgb(73, 76, 79);
+}
+
+.numPag {
+    font-size: 25px;
+    color:black;
+    text-align: right;
+    margin-right: 100px;
+    margin-bottom: 25px;
+}
+
+.loginMain {
+    background-image: url(./imagenes/fondo-ladrillo.webp);
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+    padding-top: 98px;
+    padding-bottom: 98px;
+    display: flex;
+    justify-content: center;
+}
+
+.loginSection {
+    background-color: white;
+    border: solid 1px grey;
+    border-radius: 10px;
+    box-shadow:5px 10px 8px 10px #888888;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    padding: 30px;
+}
+
+.loginSection p {
+    font-size: 30px;
+    color:black;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.loginForm__form, .categoriesForm__form {
+    font-size: 25px;
+    background-color: white;  
+    border: 0px;
+    border-bottom: solid 1px grey;
+    margin-bottom: 30px;
+}
+
+.loginForm__income, .categoriesForm__botton {
+    font-size: 25px;
+    border: 0px;   
+    font-weight: bold;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.loginForm__account {
+    font-size: 25px;
+    background-color: white;  
+    border: 0px;
+    font-weight: bold;
+    padding: 10px 40px 10px 40px;
+    text-align: center;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.loginForm__anchor {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(141, 146, 153);
+}
+
+.footerTitle {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footerDiv {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.footerDivTitle {
+    font-weight: bold;
+}
+
+.footerAnchor {
+    color: black;
+    text-decoration: none;
+}
