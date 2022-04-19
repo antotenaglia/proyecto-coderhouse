@@ -8,34 +8,37 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Patrick+Hand&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <title>¿Cómo funciona?</title>
 </head>
 <body>
     <header>
-        <section>
-            <img src="../imagenes/servicios profesionales.jpg" alt="servicios profesionales" class="logo">
-            <p class="nombrePag">FIX MY HOUSE</p>
-        </section>
-        <nav class="barraNav">
-            <ul class="barraNavLista">
-                <li class="barraNavLista__anchor"> 
-                    <a href="../index.html">Home</a>
-                </li>
-                <li class="barraNavLista__anchor">
-                    <a href="#">Cómo funciona</a>
-                </li>
-                <li class="barraNavLista__anchor">
-                    <a href="./servicios.html">Servicios</a> 
-                </li>
-                <li class="barraNavLista__anchor">
-                    <a href="./sos-profesional.html">¿Sos profesional?</a> 
-                </li>
-                <li class="barraNavLista__anchor">
-                    <a href="./iniciar-sesion.html">Iniciar sesión</a> 
-                </li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <img class="logoImg" src="../imagenes/servicios profesionales.jpg" alt="servicios profesionales">
+            <a class="nombrePag" href="../index.html">FIX MY HOUSE</a>
+        </div>
+        <div class="barra">
+            <img class="barraHamb" src="../imagenes/menu-hamb.png" alt="menuhamb">
+            <nav class="barraNav">
+                <ul class="barraNavLista">
+                    <li class="barraNavLista__anchor"> 
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="barraNavLista__anchor">
+                        <a href="#">Cómo funciona</a>
+                    </li>
+                    <li class="barraNavLista__anchor">
+                        <a href="../paginas/servicios.html">Servicios</a> 
+                    </li>
+                    <li class="barraNavLista__anchor">
+                        <a href="../paginas/sos-profesional.html">¿Sos profesional?</a> 
+                    </li>
+                    <li class="barraNavLista__anchor">
+                        <a href="../paginas/iniciar-sesion.html">Iniciar sesión</a> 
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="intro">
@@ -44,34 +47,23 @@
         <ul class="pasos">
             <li>
                 <img src="../imagenes/busca.png" alt="busca" class="pasosImg">
-                <h2 class="pasosH">BUSCA</h2>
-                <p class="pasosP">Filtra según tu ubicación y el
-                    <br>servicio que desees encontrar
-                </p>
+                <h2 class="pasosH">1. BUSCA</h2>
+                <p class="pasosP">Filtra según tu ubicación y el servicio que desees encontrar</p>
             </li>
             <li>
                 <img src="../imagenes/contacta.png" alt="contacta" class="pasosImg">
-                <h2 class="pasosH">CONTACTA</h2>
-                <p class="pasosP">Contacta a través del chat de la app 
-                    <br> móvil con aquellos profesionales de 
-                    <br> servicios disponibles en el momento. 
-                    <br> Cuéntale tu problema y pide cotización
-                </p>
+                <h2 class="pasosH">2. CONTACTA</h2>
+                <p class="pasosP">Contacta a través del chat de la app móvil con aquellos profesionales de servicios disponibles en el momento. Cuéntale tu problema y pide cotización</p>
             </li>
             <li>
                 <img src="../imagenes/elige.png" alt="elige" class="pasosImg">
-                <h2 class="pasosH">ELIGE</h2>
-                <p class="pasosP">Elige al profesional que mas encaje 
-                    <br> con tus necesidades
-                </p>
+                <h2 class="pasosH">3. ELIGE</h2>
+                <p class="pasosP">Elige al profesional que mas encaje con tus necesidades</p>
             </li>
             <li>
                 <img src="../imagenes/califica.png" alt="califica" class="pasosImg">
-                <h2 class="pasosH">CALIFICA</h2>
-                <p class="pasosP">Califica el trabajo del profesional 
-                    <br> para ayudar a otros usuarios a 
-                    <br> encontrar el mejor profesional
-                </p>
+                <h2 class="pasosH">4. CALIFICA</h2>
+                <p class="pasosP">Califica el trabajo del profesional para ayudar a otros usuarios a encontrar el mejor profesional</p>
             </li>
         </ul>
     </main>
@@ -79,6 +71,7 @@
         <p class="footerTitle"> 
             CONTACTO
         </p>
+        <section class="footerSection">
         <div class="footerDiv">     
             <p class="footerDivTitle">LOCALIZACIÓN</p>
             <p>Calle Avenida Independencia 1000</p>
@@ -92,7 +85,8 @@
             <p class="footerDivTitle">ENLACES DE INTERÉS</p>
             <p><a href="../imagenes/politica-privacidad.png" target="_blank" class="footerAnchor"> Política de privacidad </a></p>
             <p><a href="../imagenes/terminos-y-condiciones.png" target="_blank" class="footerAnchor"> Términos y condiciones </a></p>
-        </div>  
+        </div> 
+        </section> 
     </footer>
 </body>
 </html>

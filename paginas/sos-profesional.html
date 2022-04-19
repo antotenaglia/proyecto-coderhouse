@@ -8,34 +8,37 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Patrick+Hand&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <title>¿Sos profesional?</title>
 </head>
 <body>
     <header>
-        <section>
-            <img src="../imagenes/servicios profesionales.jpg" alt="servicios profesionales" class="logo">
-            <p class="nombrePag">FIX MY HOUSE</p>
-        </section>
-        <nav class="barraNav">
-            <ul class="barraNavLista">
-                <li class="barraNavLista__anchor"> 
-                    <a href="../index.html">Home</a>
-                </li>
-                <li class="barraNavLista__anchor">
-                    <a href="./como-funciona.html">Cómo funciona</a>
-                </li>
-                <li class="barraNavLista__anchor">
-                    <a href="./servicios.html">Servicios</a> 
-                </li>
-                <li class="barraNavLista__anchor">
-                    <a href="#">¿Sos profesional?</a> 
-                </li>
-                <li class="barraNavLista__anchor">
-                    <a href="./iniciar-sesion.html">Iniciar sesión</a> 
-                </li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <img class="logoImg" src="../imagenes/servicios profesionales.jpg" alt="servicios profesionales">
+            <a class="nombrePag" href="../index.html">FIX MY HOUSE</a>
+        </div>
+        <div class="barra">
+            <img class="barraHamb" src="../imagenes/menu-hamb.png" alt="menuhamb">
+            <nav class="barraNav">
+                <ul class="barraNavLista">
+                    <li class="barraNavLista__anchor"> 
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="barraNavLista__anchor">
+                        <a href="../paginas/como-funciona.html">Cómo funciona</a>
+                    </li>
+                    <li class="barraNavLista__anchor">
+                        <a href="../paginas/servicios.html">Servicios</a> 
+                    </li>
+                    <li class="barraNavLista__anchor">
+                        <a href="#">¿Sos profesional?</a> 
+                    </li>
+                    <li class="barraNavLista__anchor">
+                        <a href="../paginas/iniciar-sesion.html">Iniciar sesión</a> 
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="intro">
@@ -44,38 +47,23 @@
         <ul class="pasos">
             <li>
                 <img src="../imagenes/registrate.png" alt="registrate" class="pasosImg">
-                <h2 class="pasosH">REGÍSTRATE</h2>
-                <p class="pasosP">Descarga la app móvil para 
-                    <br> ponerte en contacto con clientes 
-                    <br> que requieran de tus servicios
-                </p>
+                <h2 class="pasosH">1. REGÍSTRATE</h2>
+                <p class="pasosP">Descarga la app móvil para ponerte en contacto con clientes que requieran de tus servicios</p>
             </li>
             <li>
                 <img src="../imagenes/clientes.png" alt="clientes" class="pasosImg">
-                <h2 class="pasosH">NUEVOS CLIENTES</h2>
-                <p class="pasosP">Tus nuevos clientes te 
-                    <br> enviarán solicitudes de trabajo  
-                    <br> a través de la app móvil. Utiliza 
-                    <br> el chat para hablar con el cliente 
-                    <br> y enviarle una cotización
-                </p>
+                <h2 class="pasosH">2. NUEVOS CLIENTES</h2>
+                <p class="pasosP">Tus nuevos clientes te enviarán solicitudes de trabajo a través de la app móvil. Utiliza el chat para hablar con el cliente y enviarle una cotización</p>
             </li>
             <li>
                 <img src="../imagenes/notificacion.png" alt="notificacion" class="pasosImg">
-                <h2 class="pasosH">TE AVISAMOS</h2>
-                <p class="pasosP">Cuando recibas una solicitud de 
-                    <br> trabajo te enviaremos una  
-                    <br> notificación a tu celular y un 
-                    <br> email para avisarte
-                </p>
+                <h2 class="pasosH">3. TE AVISAMOS</h2>
+                <p class="pasosP">Cuando recibas una solicitud de trabajo te enviaremos una notificación a tu celular y un  email para avisarte</p>
             </li>
             <li>
                 <img src="../imagenes/valoracion.png" alt="valoracion" class="pasosImg">
-                <h2 class="pasosH">VALORACIONES</h2>
-                <p class="pasosP">Gracias a nuestro sistema de
-                    <br> valoraciones tu trabajo será 
-                    <br> reconocido
-                </p>
+                <h2 class="pasosH">4. VALORACIONES</h2>
+                <p class="pasosP">Gracias a nuestro sistema de valoraciones tu trabajo será reconocido</p>
             </li>
         </ul>
     </main>
@@ -83,6 +71,7 @@
         <p class="footerTitle"> 
             CONTACTO
         </p>
+        <section class="footerSection">
         <div class="footerDiv">     
             <p class="footerDivTitle">LOCALIZACIÓN</p>
             <p>Calle Avenida Independencia 1000</p>
@@ -96,7 +85,8 @@
             <p class="footerDivTitle">ENLACES DE INTERÉS</p>
             <p><a href="../imagenes/politica-privacidad.png" target="_blank" class="footerAnchor"> Política de privacidad </a></p>
             <p><a href="../imagenes/terminos-y-condiciones.png" target="_blank" class="footerAnchor"> Términos y condiciones </a></p>
-        </div>  
+        </div> 
+        </section> 
     </footer>
 </body>
 </html>

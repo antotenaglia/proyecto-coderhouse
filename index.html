@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Patrick+Hand&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <title>Fix my house</title>
 </head>
 <body>
     <header>
         <div class="logo">
             <img class="logoImg" src="./imagenes/servicios profesionales.jpg" alt="servicios profesionales">
-            <p class="nombrePag">FIX MY HOUSE</p>
+            <a class="nombrePag" href="#">FIX MY HOUSE</a>
         </div>
-        <div class="menu">
-            <button class="menuBotton">Menú</button>
+        <div class="barra">
+            <img class="barraHamb" src="./imagenes/menu-hamb.png" alt="menuhamb">
             <nav class="barraNav">
                 <ul class="barraNavLista">
                     <li class="barraNavLista__anchor"> 
@@ -42,12 +42,8 @@
     </header>
     <main>
         <section class="intro">
-            <h1>¿QUÉ NECESITAS?</h1>
-            <p>Contacta rápidamente 
-            <br>
-            con profesionales de servicios 
-            <br>
-            cerca de tu zona</p>
+            <h1>¿QUÉ NECESITÁS?</h1>
+            <p>Contacta rápidamente con profesionales de servicios cerca de tu zona</p>
         </section>
         <section class="categories">
             <h2>NUESTRAS CATEGORÍAS</h2>
@@ -90,11 +86,44 @@
                 </li>
             </ul>     
         </section>
+        <section>  
+            <ul class="datos">
+                <li>
+                    <img src="./imagenes/prof-registrado.png" alt="profreg" class="datosImg">
+                    <p class="datosP">+30.000</p> 
+                    <p class="datosP">profesionales 
+                    <br> registrados</p>
+                </li>
+                <li>
+                    <img src="./imagenes/trabajo-realizado.png" alt="trabajoreal" class="datosImg">
+                    <p class="datosP">+80.000</p>
+                    <p class="datosP">trabajos 
+                    <br> realizados</p>
+                </li>
+                <li>
+                    <img src="./imagenes/star.png" alt="star" class="datosImg">
+                    <p class="datosP">+10.000</p>
+                    <p class="datosP">valoraciones de 
+                    <br>profesionales</p>
+                </li>
+            </ul>   
+        </section>
+        <section class="celular">
+            <p>DESCÁRGATE NUESTRA APP MÓVIL</p>
+            <div>
+                <img class="celularImg" src="./imagenes/celular.png" alt="celular">
+            </div>
+            <div>
+                <img class="celularApp" src="./imagenes/google-play.png" alt="googleplay">
+                <img class="celularApp" src="./imagenes/app-store.png" alt="appstore">
+            </div>
+        </section>
     </main>
     <footer>
         <p class="footerTitle"> 
             CONTACTO
         </p>
+        <section class="footerSection">
         <div class="footerDiv">     
             <p class="footerDivTitle">LOCALIZACIÓN</p>
             <p>Calle Avenida Independencia 1000</p>
@@ -108,7 +137,8 @@
             <p class="footerDivTitle">ENLACES DE INTERÉS</p>
             <p><a href="../imagenes/politica-privacidad.png" target="_blank" class="footerAnchor"> Política de privacidad </a></p>
             <p><a href="../imagenes/terminos-y-condiciones.png" target="_blank" class="footerAnchor"> Términos y condiciones </a></p>
-        </div>  
+        </div> 
+        </section> 
     </footer>
 </body>
 </html>
