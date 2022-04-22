@@ -7,6 +7,16 @@
 header {
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    border-bottom: solid 1px grey;
+    z-index: 1;
+}
+
+main {
+    margin-top: 63.2px;
 }
 
 .logo {
@@ -40,22 +50,20 @@ header {
 }
 
 .barraNavLista__anchor {
-    min-width: 200px;
+    min-width: 930px;
+    background-color: white;
+    list-style: none;
+    padding: 10px 10px 10px 30px;
 }
 
 .barraNavLista__anchor:hover {
-    text-decoration: underline;
+    background-image: linear-gradient(to bottom, transparent 0 50%, rgb(221, 213, 96) 50% 100%);
 }
 
 .barraNavLista {
     display: none;
     position: absolute; 
-    background-color:#f1f1f1;
-}
-
-.barraNavLista li {
-    list-style: none;
-    padding: 10px;
+    transform: translateX(-15px);
 }
 
 .barra:hover .barraNavLista {
@@ -68,6 +76,7 @@ header {
     top: 22px;
     left: 0px; 
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .barraHamb {
@@ -77,20 +86,26 @@ header {
 
 .intro {
     background-image: url(./imagenes/fondo-ladrillo.webp);
-    border-top: solid 1px grey;
     border-bottom: solid 1px grey;
-    padding: 85px 20px 85px 20px;
+    padding: 57px 20px 57px 20px;
     display: flex;
     text-align: center;
     flex-direction: column;
 }   
 
 .intro h1 {
-    color: rgb(10, 76, 163);
     font-family: 'Patrick hand', cursive;
     font-size: 50px;
     letter-spacing: 1px;
     font-weight: 100;
+    color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(126, 9, 133);
+    text-shadow: 7px 7px #d0a9cf9d;
+    padding-top: 12.5;
+    padding-bottom: 12.5px;
+    animation-name: titleanimation;
+    animation-duration: 1s;
 }
 
 .intro p {
@@ -99,9 +114,15 @@ header {
     align-self: center;
 }
 
-.categories {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.intro strong {
+    background-image: linear-gradient(to bottom, transparent 0 55%, rgb(221, 213, 96) 55% 100%);
+}
+
+.categories, .pasos {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #e57dff 100%);
 }
 
 .categories h2, .celular p {
@@ -158,7 +179,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    grid-row-gap: 50px;
+    grid-row-gap: 30px;
     grid-column-gap: 50px;
 }
 
@@ -173,6 +194,8 @@ header {
     background-color: #f1f1f1;
     opacity: 0.6;
     border-radius: 100%;
+    animation-name: datosanimation;
+    animation-duration: 1s;
 }
 
 .celular {
@@ -196,8 +219,6 @@ header {
     display: grid;  
     grid-template-columns: 300px;
     grid-template-rows: repeat(4,auto);
-    margin-top: 50px;
-    margin-bottom: 50px;
     justify-content: center;
 }
 
@@ -205,6 +226,8 @@ header {
     text-align: center;
     padding: 25px;
     height: fit-content;
+    animation-name: pasosanimation;
+    animation-duration: 1s;
 }
 
 .pasosImg {
@@ -292,9 +315,8 @@ header {
 }
 
 .loginMain {
-    background-image: url(./imagenes/fondo-ladrillo.webp);
+    background-image: linear-gradient(45deg, #85FFBD 0%, #e57dff 100%);
     border-top: solid 1px grey;
-    border-bottom: solid 1px grey;
     padding-top: 100px;
     padding-bottom: 100px;
     display: flex;
@@ -338,6 +360,11 @@ header {
     text-align: center;
     background-color: black;
     border-radius: 10px;
+    transition: transform 1s;
+}
+
+.loginForm__income:hover, .serviciesForm__botton:hover {
+    transform: scale(1.1);
 }
 
 .serviciesForm__botton {
@@ -362,12 +389,13 @@ header {
 }
 
 footer {
-    background-color: rgb(127, 157, 197);
+    background-image: url(./imagenes/fondo-ladrillo.webp);
     padding: 20px;
+    border-top: solid 1px grey;
 }
 
 .footerTitle {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     padding-top: 15px;
@@ -386,11 +414,15 @@ footer {
 .footerDiv {
     text-align: center;
     padding-bottom: 15px;
+    font-size: 20px;
 }
 
 .footerDivTitle {
     font-weight: bold;
+    font-size: 20px;
     padding-bottom: 5px;
+    background-image: linear-gradient(to bottom, transparent 0 40%, rgb(221, 213, 96) 40% 100%);
+    width: fit-content;
 }
 
 .footerAnchor {
@@ -425,11 +457,6 @@ footer {
         grid-column-gap: 50px; 
         grid-row-gap: 10px; 
     }
-
-    .footerSection {
-        grid-template-columns: repeat(3,250px);
-        grid-template-rows: auto;
-    }
 }
 
 @media only screen and (min-width: 880px) {
@@ -441,7 +468,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 940px) {
     header {
         display: flex;
         justify-content: space-between;
@@ -455,11 +482,13 @@ footer {
     .barraNavLista {
         display: initial;
         position: initial;
-        background-color: initial;
+        background-image: initial;
+        transform: none;
     }
 
     .barraNavLista__anchor {
         min-width: 10px;
+        transition: transform 0.7s;
     }
 
     .barraNavLista li {
@@ -469,6 +498,7 @@ footer {
 
     .barraNavLista__anchor:hover {
         background-color: initial;
+        transform: scale(1.1);
     }
 
     .barraHamb {
@@ -480,6 +510,11 @@ footer {
         padding-left: 10px;
         position: relative;
         top: 5px;
+    }
+
+    .footerSection {
+        grid-template-columns: repeat(3,300px);
+        grid-template-rows: auto;
     }
 }
 
@@ -501,3 +536,35 @@ footer {
         grid-column-gap: 50px;
     }
 }
+
+@keyframes titleanimation {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes datosanimation {
+    from {
+        margin-left: 100%;
+        width: 150%;
+    }
+    
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes pasosanimation {
+    from {
+        margin-left: 100%;
+        width: 150%;
+    }
+    
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+   
+        
+    
