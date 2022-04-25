@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../imagenes/casco.jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,22 +46,22 @@
             <h1>¿SOS PROFESIONAL?</h1>
         </section>
         <ul class="pasos">
-            <li>
+            <li data-aos="fade-right">
                 <img src="../imagenes/registrate.png" alt="registrate" class="pasosImg">
                 <h2 class="pasosH">1. REGÍSTRATE</h2>
                 <p class="pasosP">Descarga la app móvil para ponerte en contacto con clientes que requieran de tus servicios</p>
             </li>
-            <li>
+            <li data-aos="fade-left">
                 <img src="../imagenes/clientes.png" alt="clientes" class="pasosImg">
                 <h2 class="pasosH">2. NUEVOS CLIENTES</h2>
                 <p class="pasosP">Tus nuevos clientes te enviarán solicitudes de trabajo a través de la app móvil. Utiliza el chat para hablar con el cliente y enviarle una cotización</p>
             </li>
-            <li>
+            <li data-aos="fade-right">
                 <img src="../imagenes/notificacion.png" alt="notificacion" class="pasosImg">
                 <h2 class="pasosH">3. TE AVISAMOS</h2>
                 <p class="pasosP">Cuando recibas una solicitud de trabajo te enviaremos una notificación a tu celular y un  email para avisarte</p>
             </li>
-            <li>
+            <li data-aos="fade-left">
                 <img src="../imagenes/valoracion.png" alt="valoracion" class="pasosImg">
                 <h2 class="pasosH">4. VALORACIONES</h2>
                 <p class="pasosP">Gracias a nuestro sistema de valoraciones tu trabajo será reconocido</p>
@@ -88,5 +89,12 @@
         </div> 
         </section> 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+      </script>
 </body>
 </html>

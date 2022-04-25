@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../imagenes/casco.jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,22 +46,22 @@
         <h1>¿CÓMO FUNCIONA?</h1>
         </section>
         <ul class="pasos">
-            <li>
+            <li data-aos="fade-right">
                 <img src="../imagenes/busca.png" alt="busca" class="pasosImg">
                 <h2 class="pasosH">1. BUSCA</h2>
                 <p class="pasosP">Filtra según tu ubicación y el servicio que desees encontrar</p>
             </li>
-            <li>
+            <li data-aos="fade-left">
                 <img src="../imagenes/contacta.png" alt="contacta" class="pasosImg">
                 <h2 class="pasosH">2. CONTACTA</h2>
                 <p class="pasosP">Contacta a través del chat de la app móvil con aquellos profesionales de servicios disponibles en el momento. Cuéntale tu problema y pide cotización</p>
             </li>
-            <li>
+            <li data-aos="fade-right">
                 <img src="../imagenes/elige.png" alt="elige" class="pasosImg">
                 <h2 class="pasosH">3. ELIGE</h2>
                 <p class="pasosP">Elige al profesional que mas encaje con tus necesidades</p>
             </li>
-            <li>
+            <li data-aos="fade-left">
                 <img src="../imagenes/califica.png" alt="califica" class="pasosImg">
                 <h2 class="pasosH">4. CALIFICA</h2>
                 <p class="pasosP">Califica el trabajo del profesional para ayudar a otros usuarios a encontrar el mejor profesional</p>
@@ -88,5 +89,12 @@
         </div> 
         </section> 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+      </script>
 </body>
 </html>

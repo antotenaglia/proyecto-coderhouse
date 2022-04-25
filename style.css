@@ -105,7 +105,7 @@ main {
     padding-top: 12.5;
     padding-bottom: 12.5px;
     animation-name: titleanimation;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
 
 .intro p {
@@ -194,8 +194,8 @@ main {
     background-color: #f1f1f1;
     opacity: 0.6;
     border-radius: 100%;
-    animation-name: datosanimation;
-    animation-duration: 1s;
+/*     animation-name: pasosanimation;
+    animation-duration: 1s; */
 }
 
 .celular {
@@ -226,8 +226,8 @@ main {
     text-align: center;
     padding: 25px;
     height: fit-content;
-    animation-name: pasosanimation;
-    animation-duration: 1s;
+/*     animation-name: pasosanimation;
+    animation-duration: 1s; */
 }
 
 .pasosImg {
@@ -423,6 +423,7 @@ footer {
     padding-bottom: 5px;
     background-image: linear-gradient(to bottom, transparent 0 40%, rgb(221, 213, 96) 40% 100%);
     width: fit-content;
+    margin:auto;
 }
 
 .footerAnchor {
@@ -542,7 +543,7 @@ footer {
     100% {opacity: 1}
 }
 
-@keyframes datosanimation {
+/* @keyframes pasosanimation {
     from {
         margin-left: 100%;
         width: 150%;
@@ -552,19 +553,7 @@ footer {
         margin-left: 0%;
         width: 100%;
     }
-}
-
-@keyframes pasosanimation {
-    from {
-        margin-left: 100%;
-        width: 150%;
-    }
-    
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
+} */
    
         
     
