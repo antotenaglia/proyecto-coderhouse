@@ -4,84 +4,27 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    background-color: white;
-    width: 100%;
-    border-bottom: solid 1px grey;
-    z-index: 1;
-}
-
 main {
-    margin-top: 63.2px;
+    margin-top: 48px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.logoImg {
-    height: 30px;
-    width: 35px;
-    padding-right: 10px;
-}
-
-.nombrePag {
-    display: inline-block;
-    color: rgb(10, 76, 163);
+.navbar-brand {
+    color: rgb(10, 76, 163) !important; /* para pisar bootstrap */
     font-family: 'Indie Flower', cursive;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
 }
 
-.barraNavLista__anchor a {
-    color: black;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: 'Bebas Neue', cursive;
+.nav-link {
+    font-family: 'Bebas Neue';
     letter-spacing: 1px;
 }
 
-.barraNavLista__anchor {
-    min-width: 930px;
-    background-color: white;
-    list-style: none;
-    padding: 10px 10px 10px 30px;
+.nav-item:hover {
+    background-image: linear-gradient(to bottom, transparent 0 50%, rgb(221, 213, 96) 50% 80%, transparent 80% 100%);
 }
 
-.barraNavLista__anchor:hover {
-    background-image: linear-gradient(to bottom, transparent 0 50%, rgb(221, 213, 96) 50% 100%);
-}
-
-.barraNavLista {
-    display: none;
-    position: absolute; 
-    transform: translateX(-15px);
-}
-
-.barra:hover .barraNavLista {
-    display: block;
-}
-
-.barra {
-    position: relative;
-    position: absolute;
-    top: 22px;
-    left: 0px; 
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.barraHamb {
-    height: 20px;
-    width: 25px;
+p {
+    margin-bottom: initial;
+    line-height: initial;
 }
 
 .intro {
@@ -194,8 +137,6 @@ main {
     background-color: #f1f1f1;
     opacity: 0.6; 
     border-radius: 100%;
-/*     animation-name: pasosanimation;
-    animation-duration: 1s; */
 }
 
 .celular {
@@ -470,52 +411,24 @@ footer {
 }
 
 @media only screen and (min-width: 940px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .barra {
-        display: initial;
-        position: initial;
-    }
-
-    .barraNavLista {
-        display: initial;
-        position: initial;
-        background-image: initial;
-        transform: none;
-    }
-
-    .barraNavLista__anchor {
-        min-width: 10px;
-        transition: transform 0.7s;
-    }
-
-    .barraNavLista li {
-        display: inline-block;
-        padding: 0px 10px 0px 10px;
-    }
-
-    .barraNavLista__anchor:hover {
-        background-color: initial;
-        transform: scale(1.1);
-    }
-
-    .barraHamb {
-        height: 0px;
-        width: 0px;
-    }
-
-    .logo {
-        padding-left: 10px;
-        position: relative;
-        top: 5px;
-    }
-
     .footerSection {
         grid-template-columns: repeat(3,300px);
         grid-template-rows: auto;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+    }
+
+    .nav-item {
+        transition: transform 0.7s;
+    }
+    
+    .nav-item:hover {
+        background-color: initial;
+        transform: scale(1.1);
     }
 }
 
@@ -543,17 +456,5 @@ footer {
     100% {opacity: 1}
 }
 
-/* @keyframes pasosanimation {
-    from {
-        margin-left: 100%;
-        width: 150%;
-    }
-    
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-} */
-   
         
     
