@@ -5,7 +5,7 @@
 }
 
 main {
-    margin-top: 48px;
+    margin-top: 47px;
 }
 
 .navbar-brand {
@@ -22,6 +22,14 @@ main {
     background-image: linear-gradient(to bottom, transparent 0 50%, rgb(221, 213, 96) 50% 80%, transparent 80% 100%);
 }
 
+.navbar-toggler {
+    padding: 0px;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: white;
+}
+
 p {
     margin-bottom: initial;
     line-height: initial;
@@ -30,7 +38,7 @@ p {
 .intro {
     background-image: url(./imagenes/fondo-ladrillo.webp);
     border-bottom: solid 1px grey;
-    padding: 57px 20px 57px 20px;
+    padding: 57px 0px 57px 0px;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -38,23 +46,24 @@ p {
 
 .intro h1 {
     font-family: 'Patrick hand', cursive;
-    font-size: 50px;
+    font-size: 45px;
     letter-spacing: 1px;
     font-weight: 100;
     color: transparent;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: rgb(126, 9, 133);
     text-shadow: 7px 7px #d0a9cf9d;
-    padding-top: 12.5;
-    padding-bottom: 12.5px;
+    padding: 20px;
     animation-name: titleanimation;
     animation-duration: 1.5s;
+    margin-bottom: initial;
 }
 
 .intro p {
-    font-size: 40px;
-    width: 300px;
+    font-size: 35px;
+    width: 250px;
     align-self: center;
+    padding-bottom: 20px;
 }
 
 .intro strong {
@@ -66,6 +75,7 @@ p {
     padding-bottom: 50px;
     background-color: #85FFBD;
     background-image: linear-gradient(45deg, #85FFBD 0%, #e57dff 100%);
+    padding-left: initial;
 }
 
 .categories h2, .celular p {
@@ -95,6 +105,7 @@ p {
     grid-row-gap: 10px;
     justify-items: center;
     justify-content: center;
+    padding-left: initial;
 }
 
 .categories p {
@@ -106,8 +117,8 @@ p {
 }
 
 .categoriesImg, .datosImg{
-    width: 90px;
-    height: 90px;
+    width: 85px;
+    height: 85px;
     margin-top: 20px;
 }
 
@@ -124,6 +135,8 @@ p {
     background-size: cover;
     grid-row-gap: 30px;
     grid-column-gap: 50px;
+    padding-left: initial;
+    margin-bottom: initial;
 }
 
 .datosP {
@@ -144,13 +157,8 @@ p {
     padding: 30px;
 }
 
-.celularImg {
-    height: 250px;
-    width: 260px;
-}
-
 .celularApp {
-    height: 45px;
+    height: 55px;
     width: 150px;
     padding: 5px;
 }
@@ -161,14 +169,13 @@ p {
     grid-template-columns: 300px;
     grid-template-rows: repeat(4,auto);
     justify-content: center;
+    margin-bottom: initial;
 }
 
 .pasos li {
     text-align: center;
     padding: 25px;
     height: fit-content;
-/*     animation-name: pasosanimation;
-    animation-duration: 1s; */
 }
 
 .pasosImg {
@@ -180,6 +187,7 @@ p {
     font-size: 35px;
     font-family: 'Indie Flower', cursive;
     padding-top: 30px;
+    font-weight: bold;
 }
 
 .pasosP {
@@ -218,17 +226,13 @@ p {
     align-items: center;
 }
 
-.ratingImg {
-    width: 90px;
-    height: 90px;
-    border-radius: 100px;
-    margin-right: 15px;
-}
-
 .ratingName {
     color: rgb(10, 76, 163);
     font-size: 25px;
     display: inline-block;
+    font-weight: bold;
+    line-height: initial;
+    margin-bottom: initial;
 }   
 
 .ratingStars {
@@ -248,7 +252,7 @@ p {
 }
 
 .numPag {
-    font-size: 20px;
+    font-size: 25px;
     color:black;
     font-weight: bold;
     text-align: center;
@@ -343,19 +347,14 @@ footer {
     padding-bottom: 25px;
 }
 
-.footerSection {
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: repeat(3,auto);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    justify-content: center;
-}
-
 .footerDiv {
     text-align: center;
     padding-bottom: 15px;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.footerDiv p{
+    margin-top: 2px;
 }
 
 .footerDivTitle {
@@ -407,13 +406,6 @@ footer {
         grid-template-rows: auto;
         padding-top: 50px;
         padding-bottom: 50px;
-    }
-}
-
-@media only screen and (min-width: 940px) {
-    .footerSection {
-        grid-template-columns: repeat(3,300px);
-        grid-template-rows: auto;
     }
 }
 
