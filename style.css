@@ -11,6 +11,8 @@ main {
 .navbar-brand {
     color: rgb(10, 76, 163) !important; /* para pisar bootstrap */
     font-family: 'Indie Flower', cursive;
+    position: relative;
+    left: -18px;
 }
 
 .nav-link {
@@ -53,7 +55,7 @@ p {
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: rgb(126, 9, 133);
     text-shadow: 7px 7px #d0a9cf9d;
-    padding: 20px;
+    padding: 20px 30px;
     animation-name: titleanimation;
     animation-duration: 1.5s;
     margin-bottom: initial;
@@ -200,6 +202,21 @@ p {
     padding: 30px;
 }
 
+.btn {
+    font-family: inherit;
+    font-size: 18px;
+    padding: 1px 53px; 
+    font-weight: bold;
+} 
+
+.dropdown-item {
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1px 40px;
+}
+
 .rating {
     background-image: url(./imagenes/servicios.jpg);
     background-repeat: no-repeat;
@@ -293,7 +310,13 @@ p {
     background-color: white;  
     border: 0px;
     border-bottom: solid 1px grey;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+}
+
+.serviciesForm__form:focus {
+    outline: none;
+    border: solid 4px rgb(13, 110, 253, 0.25);
+    border-radius: 5px;
 }
 
 .loginForm__income, .serviciesForm__botton {
@@ -301,11 +324,16 @@ p {
     border: 0px;   
     font-weight: bold;
     color: white;
-    padding: 10px 5px 10px 5px;
+    padding: 10px 5px;
     text-align: center;
     background-color: black;
     border-radius: 10px;
     transition: transform 1s;
+}
+
+.loginForm__income {
+    padding: 10px 65px;
+    margin-top: 10px;
 }
 
 .loginForm__income:hover, .serviciesForm__botton:hover {
@@ -414,6 +442,10 @@ footer {
     justify-content: flex-end;
     }
 
+    .navbar-brand {
+        position: initial;
+    }
+
     .nav-item {
         transition: transform 0.7s;
     }
@@ -447,6 +479,5 @@ footer {
     0% {opacity: 0}
     100% {opacity: 1}
 }
-
         
     

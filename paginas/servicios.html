@@ -52,8 +52,24 @@
         </section>
         <section class="servicies">
             <form class="serviciesForm">
-                <div><input class="serviciesForm__form" type="city" placeholder="Ciudad"></div>
-                <div><input class="serviciesForm__form" type="service" placeholder="Servicio"></div>
+                <div><input class="serviciesForm__form text-center pt-1" type="city" placeholder="Ciudad"></div>
+                <div class="dropdown mb-4">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      Servicio
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">ALBAÑIL</a></li>
+                        <li><a class="dropdown-item" href="#">CARPINTERO</a></li>
+                        <li><a class="dropdown-item" href="#">CERRAJERO</a></li>
+                        <li><a class="dropdown-item" href="#">ELECTRICISTA</a></li>
+                        <li><a class="dropdown-item" href="#">GASISTA</a></li>
+                        <li><a class="dropdown-item" href="#">HERRERO</a></li>
+                        <li><a class="dropdown-item" href="#">PINTOR</a></li>
+                        <li><a class="dropdown-item" href="#">CERRAJERO</a></li>
+                        <li><a class="dropdown-item" href="#">PLOMERO</a></li>
+                        <li><a class="dropdown-item" href="#">REFORMAS</a></li>
+                    </ul>
+                </div>
                 <div><input class="serviciesForm__botton" type="button" value="Buscar"></div>
             </form>
         </section>
