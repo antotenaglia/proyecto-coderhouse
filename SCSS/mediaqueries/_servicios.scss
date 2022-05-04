@@ -1,0 +1,14 @@
+@media only screen and (min-width: 910px) {
+    .rating {
+        grid-template-columns: repeat(3,300px);
+        grid-template-rows: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .rating {
+        grid-column-gap: 50px;
+    }
+}

@@ -1,3 +1,19 @@
-/* @import "./base/general";
 @import "./base/variables";
-@import "./components/header"; */
+@import "./base/general";
+
+@import "./components/buscador";
+@import "./components/categories";
+@import "./components/celular";
+@import "./components/datos";
+@import "./components/iniciarsesion";
+@import "./components/intro";
+@import "./components/pasos";
+@import "./components/servicios";
+
+@import "./mediaqueries/categories";
+@import "./mediaqueries/celular";
+@import "./mediaqueries/datos";
+@import "./mediaqueries/general";
+@import "./mediaqueries/intro";
+@import "./mediaqueries/pasos";
+@import "./mediaqueries/servicios";

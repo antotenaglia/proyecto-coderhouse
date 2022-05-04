@@ -1,0 +1,37 @@
+.intro {
+    background-image: $background-ladrillo;
+    border-bottom: solid 1px grey;
+    padding: 57px 0px 57px 0px;
+    display: flex;
+    flex-direction: column;
+
+    & h1 {
+        font-family: $tipografia-titulo;
+        font-size: $fuente-xgrande;
+        letter-spacing: 1px;
+        font-weight: 100;
+        color: transparent;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: $color-titulo;
+        text-shadow: 7px 7px #d0a9cf9d;
+        padding: 20px 30px;
+        animation-name: titleanimation;
+        animation-duration: 1.5s;
+        margin-bottom: initial;
+    }
+
+    & p {
+        font-size: $fuente-grande;
+        width: 250px;
+        align-self: center;
+    }
+
+    & strong {
+        background-image: linear-gradient(to bottom, transparent 0 55%, rgb(221, 213, 96) 55% 100%); 
+    }
+}   
+
+@keyframes titleanimation {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}

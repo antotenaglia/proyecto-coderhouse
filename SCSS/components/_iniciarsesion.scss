@@ -1,0 +1,48 @@
+
+.loginMain {
+    background-image: linear-gradient(45deg, #85FFBD 0%, #e57dff 100%);
+    border-top: solid 1px grey;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.loginSection {
+    border: solid 1px grey;
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px 10px #888888;
+    height: fit-content;
+    width: fit-content;
+    padding: 15px 35px;
+
+    & p {
+        font-size: $fuente-pequena;
+        color:black;
+        font-weight: bold;
+    } 
+}
+
+.loginForm {
+    &__form {
+        font-size: $fuente-xpequena;
+    }
+
+    &__form:focus {
+        outline: none;
+    }
+
+    &__account {
+        font-size: $fuente-xpequena;
+        font-weight: bold;
+        color: $color-principal;
+        text-decoration: none;
+    }
+
+    &__help {
+        font-size: 15px;
+        color: $color-principal;
+        text-decoration: none;
+    }
+}
+

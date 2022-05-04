@@ -1,0 +1,59 @@
+.serviciesForm__form {
+    font-size: $fuente-pequena;
+}
+
+.serviciesForm__form:focus {
+    outline: none;
+}
+
+.rating {
+    background-image: url(../../imagenes/servicios.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(3,1fr);
+    justify-content: center;
+
+    &Box {
+        background-color:rgba(255,255,255,0.5);
+        border: 2px solid rgba(0, 0, 0, 0.578);
+        border-radius: 50px 20px;
+    }
+
+    &Sub1 {
+        display: flex;
+        align-items: center;
+    }
+
+    &Name {
+        color: $color-logo;
+        font-size: $fuente-mediana;
+        display: inline-block;
+        font-weight: bold;
+        line-height: initial;
+        margin-bottom: initial;
+    }
+
+    &Stars {
+        font-size: $fuente-pequena;
+        color: rgb(197, 9, 194);
+        font-weight: bold;
+    }
+
+    &Desc {
+        font-size: $fuente-pequena;
+        color:rgb(38, 39, 41);
+
+        & span {
+            font-weight: bold;
+        }
+    }
+}
+
+.numPag {
+    font-size: $fuente-mediana;
+    color: $color-principal;
+    font-weight: bold;
+}

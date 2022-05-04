@@ -1,6 +1,69 @@
-/* * {
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $tipografia-principal;
 }
 
- */
+p {
+    margin-bottom: initial;
+    line-height: initial;
+}
+
+main {
+    margin-top: 47px;
+}
+
+.navbar-brand {
+    color: $color-logo !important; /* para pisar bootstrap */
+    font-family: $tipografia-logo;
+    position: relative;
+    left: -18px;
+}
+
+.nav-link {
+    font-family: $tipografia-nav;
+    letter-spacing: 1px;
+}
+
+.nav-item:hover {
+    background-image: linear-gradient(to bottom, transparent 0 50%, rgb(221, 213, 96) 50% 80%, transparent 80% 100%);
+}
+
+.navbar-toggler {
+    padding: 0px;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: white;
+}
+
+.footer {
+    background-image: $background-ladrillo;
+    border-top: solid 1px grey;
+
+    &Title {
+        font-size: $fuente-mediana;
+        font-weight: bold;
+    }
+
+    &Anchor {
+        color: $color-principal;
+        text-decoration: none;
+    }
+
+    &Div {
+        font-size: $fuente-xpequena;
+
+        & p {
+            margin-top: 4px;
+        } 
+        
+        &Title {
+            font-weight: bold;
+            font-size: $fuente-pequena;
+            background-image: linear-gradient(to bottom, transparent 0 50%, rgb(221, 213, 96) 50% 100%);
+            width: fit-content;
+            margin: auto;
+        }
+    }
+}

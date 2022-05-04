@@ -1,0 +1,23 @@
+.celular {
+    & p {
+    font-size: $fuente-grande;
+    font-weight: 100;
+    font-family: $tipografia-titulo;
+    letter-spacing: 1px;
+    width: 200px;
+    }
+
+    & strong {
+        font-family: $tipografia-titulo;
+        letter-spacing: 1px;
+        font-weight: 100;
+        color: transparent;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: $color-titulo;
+    }
+
+    & span {
+        font-family: $tipografia-titulo;
+        color: $color-logo;
+    }
+}

@@ -1,0 +1,12 @@
+@media only screen and (min-width: 768px) {
+    .datos {
+        grid-template-columns: repeat(3,200px);
+        grid-template-rows: 200px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .datos {
+        grid-column-gap: 120px;
+    }
+}

@@ -1,0 +1,28 @@
+.categories {
+    background-color: #85FFBD;
+    background-image: $background-degradado;
+    padding-left: initial;
+
+    & h2 {
+    font-size: $fuente-grande;
+    font-weight: 100;
+    font-family: $tipografia-titulo;
+    letter-spacing: 1px;
+    }
+
+    &List {
+        display: grid;  
+        grid-template-columns: repeat(2,150px);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        justify-items: center;
+        justify-content: center;
+        padding-left: initial;
+    }
+
+    & p {
+        font-size: $fuente-pequena;
+        font-weight: bold;
+    }
+}
+

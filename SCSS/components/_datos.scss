@@ -1,0 +1,19 @@
+.datos {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: repeat(3,200px);
+    justify-content: center;
+    background-image: url(../../imagenes/fondoindex.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+    padding-left: initial;
+    margin-bottom: initial;
+
+    &P {
+        font-size: $fuente-pequena;
+        font-weight: bold;
+    }
+}

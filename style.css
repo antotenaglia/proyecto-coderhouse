@@ -4,10 +4,6 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-main {
-    margin-top: 47px;
-}
-
 .navbar-brand {
     color: rgb(10, 76, 163) !important; /* para pisar bootstrap */
     font-family: 'Indie Flower', cursive;
@@ -37,12 +33,15 @@ p {
     line-height: initial;
 }
 
+main {
+    margin-top: 47px;
+}
+
 .intro {
     background-image: url(./imagenes/fondo-ladrillo.webp);
     border-bottom: solid 1px grey;
     padding: 57px 0px 57px 0px;
     display: flex;
-    text-align: center;
     flex-direction: column;
 }   
 
@@ -65,7 +64,6 @@ p {
     font-size: 35px;
     width: 250px;
     align-self: center;
-    padding-bottom: 20px;
 }
 
 .intro strong {
@@ -73,31 +71,30 @@ p {
 }
 
 .categories, .pasos {
-    padding-top: 50px;
-    padding-bottom: 50px;
     background-color: #85FFBD;
     background-image: linear-gradient(45deg, #85FFBD 0%, #e57dff 100%);
     padding-left: initial;
 }
 
 .categories h2, .celular p {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 35px;
     font-weight: 100;
     font-family: 'Patrick hand', cursive;
     letter-spacing: 1px;
 }
 
-.celular p {
-    font-size: 30px;
-    margin-bottom: 0px;
+.celular strong {
+    font-family: 'Patrick hand', cursive;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(126, 9, 133);
 }
 
-.categories ul {
-    list-style: none;
+.celular span {
+    font-family: 'Patrick hand', cursive;
+    color:rgb(10, 76, 163);
 }
 
 .categoriesList {
@@ -112,16 +109,7 @@ p {
 
 .categories p {
     font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     font-weight: bold;
-    text-align: center;
-}
-
-.categoriesImg, .datosImg{
-    width: 85px;
-    height: 85px;
-    margin-top: 20px;
 }
 
 .datos {
@@ -129,8 +117,6 @@ p {
     grid-template-columns: 200px;
     grid-template-rows: repeat(3,200px);
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
     background-image: url(./imagenes/fondoindex.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -146,27 +132,7 @@ p {
     font-weight: bold;
 }
 
-.datos li {
-    text-align: center;
-    list-style: none;
-    background-color: #f1f1f1;
-    opacity: 0.6; 
-    border-radius: 100%;
-}
-
-.celular {
-    text-align: center;
-    padding: 30px;
-}
-
-.celularApp {
-    height: 55px;
-    width: 150px;
-    padding: 5px;
-}
-
 .pasos {
-    list-style: none;
     display: grid;  
     grid-template-columns: 300px;
     grid-template-rows: repeat(4,auto);
@@ -175,31 +141,17 @@ p {
 }
 
 .pasos li {
-    text-align: center;
-    padding: 25px;
     height: fit-content;
-}
-
-.pasosImg {
-    width: 160px;
-    height: 160px;
 }
 
 .pasosH {
     font-size: 35px;
     font-family: 'Indie Flower', cursive;
-    padding-top: 30px;
     font-weight: bold;
 }
 
 .pasosP {
     font-size: 25px;
-    padding-top: 15px;
-}
-
-.serviciesForm {
-    text-align: center;
-    padding: 30px;
 }
 
 .btn {
@@ -213,7 +165,6 @@ p {
     font-family: inherit;
     font-size: 18px;
     font-weight: bold;
-    text-align: center;
     padding: 1px 40px;
 }
 
@@ -222,8 +173,6 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 10px;
-    list-style: none;
     display: grid;
     grid-template-columns: 300px;
     grid-template-rows: repeat(3,1fr);
@@ -231,8 +180,6 @@ p {
 }
 
 .ratingBox {
-    padding: 15px;
-    margin: 10px;
     background-color:rgba(255,255,255,0.5);
     border: 2px solid rgba(0, 0, 0, 0.578);
     border-radius: 50px 20px;
@@ -261,7 +208,6 @@ p {
 .ratingDesc {
     font-size: 20px;
     color:rgb(38, 39, 41);
-    padding-top: 20px;
 }
 
 .ratingDesc span {
@@ -272,8 +218,6 @@ p {
     font-size: 25px;
     color:black;
     font-weight: bold;
-    text-align: center;
-    padding: 15px;
 }
 
 .loginMain {
@@ -286,110 +230,63 @@ p {
 }
 
 .loginSection {
-    background-color: white;
     border: solid 1px grey;
     border-radius: 10px;
-    box-shadow:5px 10px 8px 10px #888888;
+    box-shadow: 5px 10px 8px 10px #888888;
     height: fit-content;
     width: fit-content;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 35px;
 }
 
 .loginSection p {
     font-size: 20px;
     color:black;
     font-weight: bold;
-    text-align: center;
-    padding-bottom: 25px;
 }
 
 .loginForm__form, .serviciesForm__form {
     font-size: 18px;
-    background-color: white;  
-    border: 0px;
-    border-bottom: solid 1px grey;
-    margin-bottom: 24px;
 }
 
 .serviciesForm__form:focus {
     outline: none;
-    border: solid 4px rgb(13, 110, 253, 0.25);
-    border-radius: 5px;
-}
-
-.loginForm__income, .serviciesForm__botton {
-    font-size: 18px;
-    border: 0px;   
-    font-weight: bold;
-    color: white;
-    padding: 10px 5px;
-    text-align: center;
-    background-color: black;
-    border-radius: 10px;
-    transition: transform 1s;
-}
-
-.loginForm__income {
-    padding: 10px 65px;
-    margin-top: 10px;
-}
-
-.loginForm__income:hover, .serviciesForm__botton:hover {
-    transform: scale(1.1);
-}
-
-.serviciesForm__botton {
-    padding: 10px 40px 10px 40px; 
 }
 
 .loginForm__account {
     font-size:18px;
-    background-color: white;  
-    border: 0px;
     font-weight: bold;
-    padding: 10px 40px 10px 40px;
-    text-align: center;
-    margin-top:10px;
-    margin-bottom:10px;
+    color: black;
+    text-decoration: none;
 }
 
-.loginForm__anchor {
+.loginForm__help {
     font-size: 15px;
     color: black;
     text-decoration: none;
 }
 
-footer {
+.footer {
     background-image: url(./imagenes/fondo-ladrillo.webp);
-    padding: 20px;
     border-top: solid 1px grey;
 }
 
 .footerTitle {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 25px;
 }
 
 .footerDiv {
-    text-align: center;
-    padding-bottom: 15px;
     font-size: 18px;
 }
 
 .footerDiv p{
-    margin-top: 2px;
+    margin-top: 4px;
 }
 
 .footerDivTitle {
     font-weight: bold;
     font-size: 20px;
-    padding-bottom: 5px;
-    background-image: linear-gradient(to bottom, transparent 0 40%, rgb(221, 213, 96) 40% 100%);
+    background-image: linear-gradient(to bottom, transparent 0 50%, rgb(221, 213, 96) 50% 100%);
     width: fit-content;
     margin:auto;
 }
@@ -400,7 +297,7 @@ footer {
 }
 
 @media only screen and (min-width: 500px) {
-    .categoriesList {
+    .categoriesList { 
         grid-column-gap: 50px;
         grid-row-gap: 30px;
     }
@@ -428,7 +325,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 880px) {
+@media only screen and (min-width: 910px) {
     .rating {
         grid-template-columns: repeat(3,300px);
         grid-template-rows: auto;

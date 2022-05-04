@@ -1,0 +1,18 @@
+@media only screen and (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+    }
+
+    .navbar-brand {
+        position: initial;
+    }
+
+    .nav-item {
+        transition: transform 0.7s;
+
+        &:hover {
+            background-color: initial;
+            transform: scale(1.1);
+        }
+    }
+}

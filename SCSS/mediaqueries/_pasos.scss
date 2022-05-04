@@ -1,0 +1,15 @@
+@media only screen and (min-width: 768px) {
+    .pasos {
+        grid-template-columns: repeat(2,300px);
+        grid-template-rows: repeat(2,auto);
+        grid-column-gap: 50px; 
+        grid-row-gap: 10px; 
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .pasos {
+        grid-template-columns: repeat(2,425px);
+        grid-column-gap: 75px; 
+    }
+}
