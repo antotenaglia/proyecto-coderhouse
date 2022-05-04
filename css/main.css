@@ -31,7 +31,7 @@ main {
   border-color: white; }
 
 .footer {
-  background-image: url(../../imagenes/fondo-ladrillo.webp);
+  background-image: url(../imagenes/fondo-ladrillo.webp);
   border-top: solid 1px grey; }
   .footerTitle {
     font-size: 25px;
@@ -107,7 +107,7 @@ main {
   grid-template-columns: 200px;
   grid-template-rows: repeat(3, 200px);
   justify-content: center;
-  background-image: url(../../imagenes/fondoindex.jpg);
+  background-image: url(../imagenes/fondoindex.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -157,7 +157,7 @@ main {
   text-decoration: none; }
 
 .intro {
-  background-image: url(../../imagenes/fondo-ladrillo.webp);
+  background-image: url(../imagenes/fondo-ladrillo.webp);
   border-bottom: solid 1px grey;
   padding: 57px 0px 57px 0px;
   display: flex;
@@ -213,7 +213,7 @@ main {
   outline: none; }
 
 .rating {
-  background-image: url(../../imagenes/servicios.jpg);
+  background-image: url(../imagenes/servicios.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
