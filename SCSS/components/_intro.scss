@@ -12,7 +12,7 @@
         font-weight: 100;
         color: transparent;
         -webkit-text-stroke-width: 1.5px;
-        -webkit-text-stroke-color: $color-titulo;
+        -webkit-text-stroke-color: map-get($color-letra, titulo);
         text-shadow: 7px 7px #d0a9cf9d;
         padding: 20px 30px;
         animation-name: titleanimation;
@@ -27,7 +27,7 @@
     }
 
     & strong {
-        background-image: linear-gradient(to bottom, transparent 0 55%, rgb(221, 213, 96) 55% 100%); 
+        background-image: linear-gradient(to bottom, transparent 0 58%, rgb(221, 213, 96) 58% 100%); 
     }
 }   
 

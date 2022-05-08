@@ -8,13 +8,8 @@
 
 .rating {
     background-image: url(../imagenes/servicios.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: repeat(3,1fr);
-    justify-content: center;
+    @extend %background-propiedades;
+    @include grid (300px, repeat(3,1fr), auto, auto);
 
     &Box {
         background-color:rgba(255,255,255,0.5);
@@ -28,7 +23,7 @@
     }
 
     &Name {
-        color: $color-logo;
+        color: map-get($color-letra, logo);
         font-size: $fuente-mediana;
         display: inline-block;
         font-weight: bold;
@@ -54,6 +49,6 @@
 
 .numPag {
     font-size: $fuente-mediana;
-    color: $color-principal;
+    color: map-get($color-letra, principal);
     font-weight: bold;
 }

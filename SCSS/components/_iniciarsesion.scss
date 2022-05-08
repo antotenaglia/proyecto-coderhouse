@@ -35,13 +35,13 @@
     &__account {
         font-size: $fuente-xpequena;
         font-weight: bold;
-        color: $color-principal;
+        color: map-get($color-letra, principal);
         text-decoration: none;
     }
 
     &__help {
         font-size: 15px;
-        color: $color-principal;
+        color: map-get($color-letra, principal);
         text-decoration: none;
     }
 }

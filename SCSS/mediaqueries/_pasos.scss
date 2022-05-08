@@ -1,9 +1,6 @@
 @media only screen and (min-width: 768px) {
     .pasos {
-        grid-template-columns: repeat(2,300px);
-        grid-template-rows: repeat(2,auto);
-        grid-column-gap: 50px; 
-        grid-row-gap: 10px; 
+        @include grid (repeat(2,300px), repeat(2,auto), 50px, 10px);
     }
 }
 

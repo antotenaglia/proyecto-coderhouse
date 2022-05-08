@@ -1,6 +1,8 @@
-$color-principal: black;
-$color-titulo: rgb(126, 9, 133);
-$color-logo: rgb(10, 76, 163); 
+$fuente-xgrande: 45px;
+$fuente-grande: 35px;
+$fuente-mediana: 25px;
+$fuente-pequena: 20px;
+$fuente-xpequena: 18px;
 
 $tipografia-principal: 'Roboto Condensed', sans-serif;
 $tipografia-titulo: 'Patrick hand', cursive;
@@ -10,8 +12,27 @@ $tipografia-nav: 'Bebas Neue';
 $background-ladrillo: url(../imagenes/fondo-ladrillo.webp);
 $background-degradado: linear-gradient(45deg, #85FFBD 0%, #e57dff 100%);
 
-$fuente-xgrande: 45px;
-$fuente-grande: 35px;
-$fuente-mediana: 25px;
-$fuente-pequena: 20px;
-$fuente-xpequena: 18px;
+$color-letra:(
+    principal: black,
+    titulo: rgb(126, 9, 133),
+    logo: rgb(10, 76, 163), 
+);
+
+%background-propiedades {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin grid ($template-column, $template-row, $column-gap, $row-gap){
+    display: grid;
+    justify-content: center;
+    margin-bottom: initial;
+    padding-left: initial; 
+    grid-template-columns:$template-column;
+    grid-template-rows: $template-row;
+    grid-column-gap:$column-gap;
+    grid-row-gap: $row-gap;
+}
+
+

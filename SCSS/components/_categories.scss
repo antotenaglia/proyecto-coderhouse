@@ -8,16 +8,12 @@
     font-weight: 100;
     font-family: $tipografia-titulo;
     letter-spacing: 1px;
+    margin-bottom: initial;
     }
 
     &List {
-        display: grid;  
-        grid-template-columns: repeat(2,150px);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        @include grid (repeat(2,150px), auto, 10px, 10px);
         justify-items: center;
-        justify-content: center;
-        padding-left: initial;
     }
 
     & p {

@@ -1,12 +1,7 @@
 .pasos {
-    display: grid;  
-    grid-template-columns: 300px;
-    grid-template-rows: repeat(4,auto);
-    justify-content: center;
-    margin-bottom: initial;
+    @include grid (300px, repeat(4,auto), auto, auto);
     background-color: #85FFBD;
     background-image: linear-gradient(45deg, #85FFBD 0%, #e57dff 100%);
-    padding-left: initial;
 
     & li {
         height: fit-content;

@@ -1,16 +1,7 @@
 .datos {
-    display: grid;
-    grid-template-columns: 200px;
-    grid-template-rows: repeat(3,200px);
-    justify-content: center;
+    @include grid (200px, repeat(3,200px), 50px, 30px);
     background-image: url(../imagenes/fondoindex.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    grid-row-gap: 30px;
-    grid-column-gap: 50px;
-    padding-left: initial;
-    margin-bottom: initial;
+    @extend %background-propiedades;
 
     &P {
         font-size: $fuente-pequena;

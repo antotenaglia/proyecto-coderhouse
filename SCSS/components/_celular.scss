@@ -1,5 +1,5 @@
 .celular {
-    & p {
+    & h2 {
     font-size: $fuente-grande;
     font-weight: 100;
     font-family: $tipografia-titulo;
@@ -13,11 +13,13 @@
         font-weight: 100;
         color: transparent;
         -webkit-text-stroke-width: 1.5px;
-        -webkit-text-stroke-color: $color-titulo;
+        -webkit-text-stroke-color: map-get($color-letra, titulo);
+        ;
     }
 
     & span {
         font-family: $tipografia-titulo;
-        color: $color-logo;
+        color: map-get($color-letra, logo);
+
     }
 }

@@ -14,7 +14,7 @@ main {
 }
 
 .navbar-brand {
-    color: $color-logo !important; /* para pisar bootstrap */
+    color: map-get($color-letra, logo) !important; /* para pisar bootstrap */
     font-family: $tipografia-logo;
     position: relative;
     left: -18px;
@@ -47,7 +47,7 @@ main {
     }
 
     &Anchor {
-        color: $color-principal;
+        color: map-get($color-letra, principal);
         text-decoration: none;
     }
 
