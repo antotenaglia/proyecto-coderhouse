@@ -9,7 +9,11 @@
 .rating {
     background-image: url(../imagenes/servicios.jpg);
     @extend %background-propiedades;
-    @include grid (300px, repeat(3,1fr), auto, auto);
+    
+    &Class {
+        @include grid (300px, repeat(3,1fr), auto, auto);
+        padding-top: 70px;
+    }
 
     &Box {
         background-color:rgba(255,255,255,0.5);
@@ -47,8 +51,6 @@
     }
 }
 
-.numPag {
-    font-size: $fuente-mediana;
-    color: map-get($color-letra, principal);
+.pagination {
     font-weight: bold;
 }
