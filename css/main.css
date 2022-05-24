@@ -275,6 +275,9 @@ main {
 .pagination {
   font-weight: bold; }
 
+.page-link {
+  color: #0a4ca3; }
+
 @media only screen and (min-width: 500px) {
   .categoriesList {
     grid-column-gap: 50px;

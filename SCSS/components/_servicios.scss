@@ -54,3 +54,7 @@
 .pagination {
     font-weight: bold;
 }
+
+.page-link {
+    color: map-get($color-letra, logo);
+}
